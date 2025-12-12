@@ -1,0 +1,1100 @@
+{
+    "variables": [
+        {
+            "id": 1,
+            "question": "Which of the following is a valid variable name in Python?",
+            "options": [
+                "2nd_variable",
+                "second-variable",
+                "second_variable",
+                "second variable"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Variable names must start with a letter or underscore, cannot contain spaces or hyphens. 'second_variable' follows snake_case convention and is valid."
+        },
+        {
+            "id": 2,
+            "question": "What will be the output of: x = 5; x = 'hello'; print(type(x))?",
+            "options": [
+                "<class 'int'>",
+                "<class 'str'>",
+                "Error",
+                "<class 'float'>"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Python is dynamically typed, so variables can change type. After reassigning x to 'hello', its type becomes string."
+        },
+        {
+            "id": 3,
+            "question": "How do you assign the same value to multiple variables in one line?",
+            "options": [
+                "x, y, z = 10",
+                "x = y = z = 10",
+                "x; y; z = 10",
+                "x + y + z = 10"
+            ],
+            "correctAnswer": 1,
+            "explanation": "x = y = z = 10 assigns the value 10 to all three variables simultaneously."
+        },
+        {
+            "id": 4,
+            "question": "What happens when you try to use a variable before assigning it a value?",
+            "options": [
+                "It returns None",
+                "It returns 0",
+                "It raises a NameError",
+                "It returns an empty string"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Python raises a NameError when you try to use a variable that hasn't been defined yet."
+        },
+        {
+            "id": 5,
+            "question": "Which statement correctly swaps the values of variables a and b?",
+            "options": [
+                "a, b = b, a",
+                "swap(a, b)",
+                "a = b; b = a",
+                "temp = a; a = b; b = temp"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Python allows elegant tuple unpacking: a, b = b, a swaps values in one line. Option 3 would make both equal to b."
+        },
+        {
+            "id": 6,
+            "question": "What is the naming convention for Python variables?",
+            "options": [
+                "camelCase",
+                "PascalCase",
+                "snake_case",
+                "kebab-case"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Python follows snake_case convention for variable names (lowercase with underscores)."
+        },
+        {
+            "id": 7,
+            "question": "Can a variable name start with a number in Python?",
+            "options": [
+                "Yes, always",
+                "No, never",
+                "Yes, but only if it's a float",
+                "Yes, but only in Python 3"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Variable names cannot start with a number in Python. They must start with a letter or underscore."
+        },
+        {
+            "id": 8,
+            "question": "What is the result of: x, y, z = 1, 2, 3; print(y)?",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "Error"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Multiple assignment unpacks values in order: x=1, y=2, z=3. So print(y) outputs 2."
+        },
+        {
+            "id": 9,
+            "question": "Which of these is NOT a valid variable name?",
+            "options": [
+                "_private",
+                "my_var",
+                "class",
+                "myVar2"
+            ],
+            "correctAnswer": 2,
+            "explanation": "'class' is a reserved keyword in Python and cannot be used as a variable name."
+        },
+        {
+            "id": 10,
+            "question": "What does this code output: a = [1, 2]; b = a; b.append(3); print(a)?",
+            "options": [
+                "[1, 2]",
+                "[1, 2, 3]",
+                "Error",
+                "[3]"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Lists are mutable and b = a creates a reference, not a copy. Changes to b affect a. Output: [1, 2, 3]."
+        }
+    ],
+    "data-types": [
+        {
+            "id": 11,
+            "question": "What is the type of the value 3.14?",
+            "options": [
+                "int",
+                "float",
+                "str",
+                "decimal"
+            ],
+            "correctAnswer": 1,
+            "explanation": "3.14 is a decimal number, which Python represents as a float (floating-point number)."
+        },
+        {
+            "id": 12,
+            "question": "What does int('42') return?",
+            "options": [
+                "'42'",
+                "42",
+                "42.0",
+                "Error"
+            ],
+            "correctAnswer": 1,
+            "explanation": "int() converts the string '42' to the integer 42."
+        },
+        {
+            "id": 13,
+            "question": "Which of these is a boolean value?",
+            "options": [
+                "'True'",
+                "1",
+                "True",
+                "yes"
+            ],
+            "correctAnswer": 2,
+            "explanation": "True (capitalized) is a boolean value. 'True' is a string, 1 is an integer, and 'yes' is a string."
+        },
+        {
+            "id": 14,
+            "question": "What is the result of: str(100) + str(50)?",
+            "options": [
+                "150",
+                "'150'",
+                "'10050'",
+                "Error"
+            ],
+            "correctAnswer": 2,
+            "explanation": "str() converts numbers to strings. String concatenation '100' + '50' results in '10050'."
+        },
+        {
+            "id": 15,
+            "question": "What does type(type(5)) return?",
+            "options": [
+                "<class 'int'>",
+                "<class 'type'>",
+                "<class 'function'>",
+                "Error"
+            ],
+            "correctAnswer": 1,
+            "explanation": "type(5) returns <class 'int'>, and type() of that returns <class 'type'> (the type of a type object)."
+        },
+        {
+            "id": 16,
+            "question": "How do you create a multi-line string in Python?",
+            "options": [
+                "Using single quotes",
+                "Using triple quotes",
+                "Using backslashes",
+                "Using double quotes"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Triple quotes (''' or \"\"\") allow you to create multi-line strings in Python."
+        },
+        {
+            "id": 17,
+            "question": "What is the result of: bool(0)?",
+            "options": [
+                "True",
+                "False",
+                "0",
+                "Error"
+            ],
+            "correctAnswer": 1,
+            "explanation": "In Python, 0 is considered falsy, so bool(0) returns False. Non-zero numbers are truthy."
+        },
+        {
+            "id": 18,
+            "question": "Which conversion will cause an error?",
+            "options": [
+                "int(3.14)",
+                "float('3.14')",
+                "int('hello')",
+                "str(True)"
+            ],
+            "correctAnswer": 2,
+            "explanation": "int('hello') raises a ValueError because 'hello' cannot be converted to an integer."
+        },
+        {
+            "id": 19,
+            "question": "What is the type of None in Python?",
+            "options": [
+                "<class 'none'>",
+                "<class 'NoneType'>",
+                "<class 'null'>",
+                "<class 'void'>"
+            ],
+            "correctAnswer": 1,
+            "explanation": "None is a special constant in Python with type <class 'NoneType'>."
+        },
+        {
+            "id": 20,
+            "question": "What does float(5) return?",
+            "options": [
+                "5",
+                "5.0",
+                "'5.0'",
+                "Error"
+            ],
+            "correctAnswer": 1,
+            "explanation": "float(5) converts the integer 5 to the floating-point number 5.0."
+        }
+    ],
+    "operators": [
+        {
+            "id": 21,
+            "question": "What is the result of: 10 // 3?",
+            "options": [
+                "3.33",
+                "3",
+                "4",
+                "3.0"
+            ],
+            "correctAnswer": 1,
+            "explanation": "The // operator performs floor division, returning only the integer quotient without the remainder."
+        },
+        {
+            "id": 22,
+            "question": "What does 2 ** 3 evaluate to?",
+            "options": [
+                "6",
+                "8",
+                "9",
+                "5"
+            ],
+            "correctAnswer": 1,
+            "explanation": "The ** operator is exponentiation. 2 ** 3 means 2 to the power of 3, which equals 8."
+        },
+        {
+            "id": 23,
+            "question": "What is the result of: 17 % 5?",
+            "options": [
+                "3",
+                "2",
+                "3.4",
+                "12"
+            ],
+            "correctAnswer": 1,
+            "explanation": "The modulus operator % returns the remainder of division. 17 ÷ 5 = 3 remainder 2."
+        },
+        {
+            "id": 24,
+            "question": "What does True and False evaluate to?",
+            "options": [
+                "True",
+                "False",
+                "None",
+                "Error"
+            ],
+            "correctAnswer": 1,
+            "explanation": "The 'and' operator returns True only if both operands are True. True and False = False."
+        },
+        {
+            "id": 25,
+            "question": "What is the result of: not (5 > 3)?",
+            "options": [
+                "True",
+                "False",
+                "5",
+                "3"
+            ],
+            "correctAnswer": 1,
+            "explanation": "5 > 3 is True, and not True equals False. The not operator inverts the boolean value."
+        },
+        {
+            "id": 26,
+            "question": "What does False or True evaluate to?",
+            "options": [
+                "False",
+                "True",
+                "None",
+                "Error"
+            ],
+            "correctAnswer": 1,
+            "explanation": "The 'or' operator returns True if at least one operand is True. False or True = True."
+        },
+        {
+            "id": 27,
+            "question": "What is the result of: 10 / 2?",
+            "options": [
+                "5",
+                "5.0",
+                "4",
+                "Error"
+            ],
+            "correctAnswer": 1,
+            "explanation": "The / operator always returns a float in Python 3, even when dividing evenly. 10 / 2 = 5.0."
+        },
+        {
+            "id": 28,
+            "question": "What does x += 5 do?",
+            "options": [
+                "Compares x to 5",
+                "Adds 5 to x and assigns the result to x",
+                "Subtracts 5 from x",
+                "Creates a new variable"
+            ],
+            "correctAnswer": 1,
+            "explanation": "x += 5 is shorthand for x = x + 5. It adds 5 to x and stores the result back in x."
+        },
+        {
+            "id": 29,
+            "question": "Which operator has the highest precedence?",
+            "options": [
+                "+",
+                "*",
+                "**",
+                "=="
+            ],
+            "correctAnswer": 2,
+            "explanation": "** (exponentiation) has the highest precedence among these operators, following mathematical PEMDAS rules."
+        },
+        {
+            "id": 30,
+            "question": "What is the result of: 5 == 5.0?",
+            "options": [
+                "True",
+                "False",
+                "Error",
+                "None"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Python compares values, not types, with ==. Since 5 and 5.0 have the same value, the result is True."
+        }
+    ],
+    "conditionals": [
+        {
+            "id": 31,
+            "question": "What will this code print: x = 10; if x > 5: print('A'); else: print('B')?",
+            "options": [
+                "A",
+                "B",
+                "AB",
+                "Nothing"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Since x (10) is greater than 5, the condition is True, so 'A' is printed."
+        },
+        {
+            "id": 32,
+            "question": "What is the purpose of elif?",
+            "options": [
+                "To end an if statement",
+                "To check an additional condition",
+                "To repeat code",
+                "To define a function"
+            ],
+            "correctAnswer": 1,
+            "explanation": "elif (else if) allows you to check another condition if the previous if/elif was False."
+        },
+        {
+            "id": 33,
+            "question": "What happens if all conditions in an if-elif-else chain are False?",
+            "options": [
+                "Error occurs",
+                "Nothing happens",
+                "The else block executes",
+                "The first if executes"
+            ],
+            "correctAnswer": 2,
+            "explanation": "If all if/elif conditions are False, the else block (if present) executes as the default case."
+        },
+        {
+            "id": 34,
+            "question": "What is wrong with this code: if x > 5 print('Yes')?",
+            "options": [
+                "Missing colon after condition",
+                "Missing parentheses",
+                "Missing semicolon",
+                "Nothing is wrong"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Python requires a colon (:) after the condition in an if statement. Correct: if x > 5:"
+        },
+        {
+            "id": 35,
+            "question": "Can you have an elif without an else?",
+            "options": [
+                "No, else is required",
+                "Yes, else is optional",
+                "Only in Python 2",
+                "Only with nested ifs"
+            ],
+            "correctAnswer": 1,
+            "explanation": "The else clause is always optional. You can have if-elif chains without a final else."
+        },
+        {
+            "id": 36,
+            "question": "What will print: x = 0; if x: print('True'); else: print('False')?",
+            "options": [
+                "True",
+                "False",
+                "0",
+                "Error"
+            ],
+            "correctAnswer": 1,
+            "explanation": "0 is considered falsy in Python, so the if condition is False and 'False' is printed."
+        },
+        {
+            "id": 37,
+            "question": "How many elif statements can you have?",
+            "options": [
+                "Only 1",
+                "Maximum 5",
+                "As many as needed",
+                "None"
+            ],
+            "correctAnswer": 2,
+            "explanation": "You can have as many elif statements as needed to check multiple conditions sequentially."
+        },
+        {
+            "id": 38,
+            "question": "What is a nested conditional?",
+            "options": [
+                "A condition inside another condition",
+                "Multiple conditions with and/or",
+                "A condition in a loop",
+                "A function that returns a boolean"
+            ],
+            "correctAnswer": 0,
+            "explanation": "A nested conditional is an if statement placed inside another if/elif/else block."
+        },
+        {
+            "id": 39,
+            "question": "What will this print: if True: if False: print('A'); else: print('B')?",
+            "options": [
+                "A",
+                "B",
+                "AB",
+                "Nothing"
+            ],
+            "correctAnswer": 1,
+            "explanation": "The outer if is True, so we enter it. The inner if is False, so the inner else executes, printing 'B'."
+        },
+        {
+            "id": 40,
+            "question": "Which values are considered falsy in Python?",
+            "options": [
+                "Only False",
+                "False, 0, empty string, None",
+                "Only 0",
+                "Only None"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Python considers False, 0, empty strings (''), None, empty lists [], and empty dicts {} as falsy."
+        }
+    ],
+    "loops": [
+        {
+            "id": 41,
+            "question": "What does range(5) generate?",
+            "options": [
+                "1, 2, 3, 4, 5",
+                "0, 1, 2, 3, 4",
+                "0, 1, 2, 3, 4, 5",
+                "1, 2, 3, 4"
+            ],
+            "correctAnswer": 1,
+            "explanation": "range(5) generates numbers from 0 up to (but not including) 5: 0, 1, 2, 3, 4."
+        },
+        {
+            "id": 42,
+            "question": "What does break do in a loop?",
+            "options": [
+                "Skips to next iteration",
+                "Exits the loop entirely",
+                "Pauses the loop",
+                "Restarts the loop"
+            ],
+            "correctAnswer": 1,
+            "explanation": "The break statement immediately exits the loop, stopping all further iterations."
+        },
+        {
+            "id": 43,
+            "question": "What does continue do in a loop?",
+            "options": [
+                "Exits the loop",
+                "Skips to the next iteration",
+                "Repeats current iteration",
+                "Does nothing"
+            ],
+            "correctAnswer": 1,
+            "explanation": "continue skips the rest of the current iteration and moves to the next one."
+        },
+        {
+            "id": 44,
+            "question": "What will this print: for i in range(3): print(i)?",
+            "options": [
+                "1 2 3",
+                "0 1 2",
+                "0 1 2 3",
+                "1 2"
+            ],
+            "correctAnswer": 1,
+            "explanation": "range(3) generates 0, 1, 2. The loop prints each value on a new line: 0, 1, 2."
+        },
+        {
+            "id": 45,
+            "question": "How do you create an infinite loop?",
+            "options": [
+                "for i in range(inf)",
+                "while True:",
+                "loop forever:",
+                "repeat:"
+            ],
+            "correctAnswer": 1,
+            "explanation": "while True: creates an infinite loop because the condition is always True. Use break to exit."
+        },
+        {
+            "id": 46,
+            "question": "What does range(2, 8, 2) generate?",
+            "options": [
+                "2, 4, 6",
+                "2, 4, 6, 8",
+                "2, 3, 4, 5, 6, 7",
+                "4, 6, 8"
+            ],
+            "correctAnswer": 0,
+            "explanation": "range(start, stop, step) with range(2, 8, 2) generates: 2, 4, 6 (stops before 8)."
+        },
+        {
+            "id": 47,
+            "question": "What does enumerate() do?",
+            "options": [
+                "Counts items",
+                "Adds index to items",
+                "Sorts items",
+                "Reverses items"
+            ],
+            "correctAnswer": 1,
+            "explanation": "enumerate() adds a counter (index) to an iterable, returning (index, value) pairs."
+        },
+        {
+            "id": 48,
+            "question": "Can you use else with a for loop?",
+            "options": [
+                "No, only with if",
+                "Yes, it runs if loop completes normally",
+                "Yes, it runs if loop breaks",
+                "No, syntax error"
+            ],
+            "correctAnswer": 1,
+            "explanation": "A for-else executes the else block if the loop completes normally (not broken by break)."
+        },
+        {
+            "id": 49,
+            "question": "What will this print: for i in 'Hi': print(i)?",
+            "options": [
+                "Hi",
+                "H i",
+                "H\\ni",
+                "Error"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Strings are iterable. The loop prints each character on a new line: H, then i."
+        },
+        {
+            "id": 50,
+            "question": "What is the difference between while and for loops?",
+            "options": [
+                "No difference",
+                "while uses conditions, for iterates sequences",
+                "for is faster",
+                "while is deprecated"
+            ],
+            "correctAnswer": 1,
+            "explanation": "while loops repeat while a condition is True. for loops iterate over sequences (lists, ranges, etc.)."
+        }
+    ],
+    "functions": [
+        {
+            "id": 51,
+            "question": "What keyword defines a function in Python?",
+            "options": [
+                "function",
+                "def",
+                "func",
+                "define"
+            ],
+            "correctAnswer": 1,
+            "explanation": "The 'def' keyword is used to define a function in Python."
+        },
+        {
+            "id": 52,
+            "question": "What does a function return if there's no return statement?",
+            "options": [
+                "0",
+                "Empty string",
+                "None",
+                "Error"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Functions without a return statement automatically return None."
+        },
+        {
+            "id": 53,
+            "question": "What is a parameter?",
+            "options": [
+                "A function's return value",
+                "A variable in the function definition",
+                "A function call",
+                "A loop variable"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Parameters are variables listed in the function definition that receive values when the function is called."
+        },
+        {
+            "id": 54,
+            "question": "What is the difference between parameters and arguments?",
+            "options": [
+                "No difference",
+                "Parameters are in definition, arguments are in calls",
+                "Arguments are in definition, parameters are in calls",
+                "Parameters are optional"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Parameters are variables in the function definition. Arguments are the actual values passed when calling the function."
+        },
+        {
+            "id": 55,
+            "question": "Can a function return multiple values?",
+            "options": [
+                "No, only one value",
+                "Yes, as a tuple",
+                "Yes, as a list",
+                "Only in Python 3"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Functions can return multiple values separated by commas, which Python automatically packs into a tuple."
+        },
+        {
+            "id": 56,
+            "question": "What is a default parameter?",
+            "options": [
+                "The first parameter",
+                "A parameter with a preset value",
+                "A required parameter",
+                "The return value"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Default parameters have preset values used when no argument is provided for that parameter."
+        },
+        {
+            "id": 57,
+            "question": "What is a docstring?",
+            "options": [
+                "A comment",
+                "A string that documents a function",
+                "A function name",
+                "A return value"
+            ],
+            "correctAnswer": 1,
+            "explanation": "A docstring is a string literal (usually triple-quoted) that documents what a function does."
+        },
+        {
+            "id": 58,
+            "question": "Can you call a function before defining it?",
+            "options": [
+                "Yes, always",
+                "No, it causes an error",
+                "Yes, but only in interactive mode",
+                "Yes, if it's in a class"
+            ],
+            "correctAnswer": 1,
+            "explanation": "You must define a function before calling it, otherwise Python raises a NameError."
+        },
+        {
+            "id": 59,
+            "question": "What does this function return: def add(a, b): a + b?",
+            "options": [
+                "Sum of a and b",
+                "None",
+                "Error",
+                "0"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Without a return statement, the function returns None. The expression a + b is calculated but not returned."
+        },
+        {
+            "id": 60,
+            "question": "Can functions be assigned to variables?",
+            "options": [
+                "No, only values can",
+                "Yes, functions are first-class objects",
+                "Only lambda functions",
+                "Only in Python 3"
+            ],
+            "correctAnswer": 1,
+            "explanation": "In Python, functions are first-class objects and can be assigned to variables, passed as arguments, etc."
+        }
+    ],
+    "data-structures": [
+        {
+            "id": 61,
+            "question": "What is the main difference between lists and tuples?",
+            "options": [
+                "Lists use (), tuples use []",
+                "Lists are mutable, tuples are immutable",
+                "Tuples are faster",
+                "No difference"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Lists are mutable (can be changed) while tuples are immutable (cannot be changed after creation)."
+        },
+        {
+            "id": 62,
+            "question": "How do you access the last element of a list?",
+            "options": [
+                "list[last]",
+                "list[-1]",
+                "list[end]",
+                "list.last()"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Negative indexing allows access from the end. list[-1] gets the last element, list[-2] gets second-to-last, etc."
+        },
+        {
+            "id": 63,
+            "question": "What does list.append(x) do?",
+            "options": [
+                "Adds x to the beginning",
+                "Adds x to the end",
+                "Removes x",
+                "Sorts the list"
+            ],
+            "correctAnswer": 1,
+            "explanation": "append() adds an element to the end of the list."
+        },
+        {
+            "id": 64,
+            "question": "What is a dictionary?",
+            "options": [
+                "An ordered list",
+                "A collection of key-value pairs",
+                "A type of tuple",
+                "A sorted list"
+            ],
+            "correctAnswer": 1,
+            "explanation": "A dictionary is an unordered collection of key-value pairs, where each key maps to a value."
+        },
+        {
+            "id": 65,
+            "question": "How do you create an empty list?",
+            "options": [
+                "list()",
+                "[]",
+                "Both are correct",
+                "empty_list"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Both list() and [] create an empty list in Python."
+        },
+        {
+            "id": 66,
+            "question": "What does my_list[1:3] return?",
+            "options": [
+                "Elements at index 1 and 2",
+                "Elements at index 1, 2, and 3",
+                "Elements at index 0, 1, and 2",
+                "Element at index 1"
+            ],
+            "correctAnswer": 0,
+            "explanation": "List slicing [start:end] includes start but excludes end. [1:3] returns elements at indices 1 and 2."
+        },
+        {
+            "id": 67,
+            "question": "Can dictionary keys be lists?",
+            "options": [
+                "Yes, always",
+                "No, keys must be immutable",
+                "Yes, but only empty lists",
+                "Only in Python 3"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Dictionary keys must be immutable (hashable). Lists are mutable, so they cannot be used as keys."
+        },
+        {
+            "id": 68,
+            "question": "What does len([1, 2, 3]) return?",
+            "options": [
+                "6",
+                "3",
+                "2",
+                "Error"
+            ],
+            "correctAnswer": 1,
+            "explanation": "len() returns the number of elements in a list. [1, 2, 3] has 3 elements."
+        },
+        {
+            "id": 69,
+            "question": "How do you add a key-value pair to a dictionary?",
+            "options": [
+                "dict.add(key, value)",
+                "dict[key] = value",
+                "dict.insert(key, value)",
+                "dict.append(key, value)"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Use dict[key] = value to add or update a key-value pair in a dictionary."
+        },
+        {
+            "id": 70,
+            "question": "What does list.pop() do?",
+            "options": [
+                "Removes first element",
+                "Removes and returns last element",
+                "Adds an element",
+                "Sorts the list"
+            ],
+            "correctAnswer": 1,
+            "explanation": "pop() removes and returns the last element of the list. pop(i) removes element at index i."
+        }
+    ],
+    "modules": [
+        {
+            "id": 71,
+            "question": "What is a module in Python?",
+            "options": [
+                "A function",
+                "A file containing Python code",
+                "A data type",
+                "A loop"
+            ],
+            "correctAnswer": 1,
+            "explanation": "A module is a Python file (.py) containing functions, classes, and variables that can be imported."
+        },
+        {
+            "id": 72,
+            "question": "What does 'import math' do?",
+            "options": [
+                "Installs math module",
+                "Imports the math module",
+                "Defines math functions",
+                "Deletes math module"
+            ],
+            "correctAnswer": 1,
+            "explanation": "'import math' loads the math module, making its functions available as math.function_name()."
+        },
+        {
+            "id": 73,
+            "question": "What is the difference between 'import math' and 'from math import sqrt'?",
+            "options": [
+                "No difference",
+                "First imports all, second imports only sqrt",
+                "First is faster",
+                "Second is deprecated"
+            ],
+            "correctAnswer": 1,
+            "explanation": "'import math' imports the entire module (use math.sqrt()). 'from math import sqrt' imports only sqrt (use sqrt() directly)."
+        },
+        {
+            "id": 74,
+            "question": "What does 'import antigravity' do?",
+            "options": [
+                "Imports physics functions",
+                "Opens a Python Easter egg comic",
+                "Causes an error",
+                "Imports gravity calculations"
+            ],
+            "correctAnswer": 1,
+            "explanation": "It's a Python Easter egg that opens the XKCD comic about Python in your web browser!"
+        },
+        {
+            "id": 75,
+            "question": "How do you create an alias for a module?",
+            "options": [
+                "import module alias name",
+                "import module as name",
+                "from module import as name",
+                "alias module name"
+            ],
+            "correctAnswer": 1,
+            "explanation": "'import module as name' creates an alias. Example: import numpy as np."
+        },
+        {
+            "id": 76,
+            "question": "What is the Python standard library?",
+            "options": [
+                "A book about Python",
+                "Built-in modules that come with Python",
+                "A third-party package",
+                "A code editor"
+            ],
+            "correctAnswer": 1,
+            "explanation": "The standard library is a collection of modules that come built-in with Python (math, os, json, etc.)."
+        },
+        {
+            "id": 77,
+            "question": "How do you install third-party modules?",
+            "options": [
+                "import install module",
+                "pip install module",
+                "python install module",
+                "download module"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Use 'pip install module_name' in the command line to install third-party Python packages."
+        },
+        {
+            "id": 78,
+            "question": "What does 'from module import *' do?",
+            "options": [
+                "Imports nothing",
+                "Imports everything from module",
+                "Causes an error",
+                "Deletes the module"
+            ],
+            "correctAnswer": 1,
+            "explanation": "'from module import *' imports all public names from the module (not recommended as it can cause naming conflicts)."
+        },
+        {
+            "id": 79,
+            "question": "Can you import your own Python files as modules?",
+            "options": [
+                "No, only built-in modules",
+                "Yes, any .py file can be imported",
+                "Only if they're in the same folder",
+                "Only with special syntax"
+            ],
+            "correctAnswer": 1,
+            "explanation": "Any Python file can be imported as a module using its filename (without .py extension)."
+        },
+        {
+            "id": 80,
+            "question": "What module would you use for random numbers?",
+            "options": [
+                "math",
+                "random",
+                "numbers",
+                "rand"
+            ],
+            "correctAnswer": 1,
+            "explanation": "The 'random' module provides functions for generating random numbers and making random choices."
+        }
+    ],
+    "file-operations": [
+        {
+            "id": 81,
+            "question": "What does 'r' mode mean when opening a file?",
+            "options": [
+                "Write",
+                "Read",
+                "Append",
+                "Remove"
+            ],
+            "correctAnswer": 1,
+            "explanation": "'r' mode opens a file for reading. It's the default mode if no mode is specified."
+        },
+        {
+            "id": 82,
+            "question": "What happens if you open a file in 'w' mode that already exists?",
+            "options": [
+                "Appends to it",
+                "Reads it",
+                "Overwrites it",
+                "Causes an error"
+            ],
+            "correctAnswer": 2,
+            "explanation": "'w' mode overwrites the existing file. Use 'a' mode to append instead."
+        },
+        {
+            "id": 83,
+            "question": "Why use 'with' when opening files?",
+            "options": [
+                "It's faster",
+                "It automatically closes the file",
+                "It's required",
+                "It prevents errors"
+            ],
+            "correctAnswer": 1,
+            "explanation": "'with' automatically closes the file when done, even if an error occurs. It's safer than manual closing."
+        },
+        {
+            "id": 84,
+            "question": "What does file.read() return?",
+            "options": [
+                "A list of lines",
+                "The entire file as a string",
+                "The first line",
+                "Nothing"
+            ],
+            "correctAnswer": 1,
+            "explanation": "read() returns the entire file content as a single string."
+        },
+        {
+            "id": 85,
+            "question": "What does file.readlines() return?",
+            "options": [
+                "A string",
+                "A list where each element is a line",
+                "The first line",
+                "A dictionary"
+            ],
+            "correctAnswer": 1,
+            "explanation": "readlines() returns a list where each element is a line from the file (including newline characters)."
+        },
+        {
+            "id": 86,
+            "question": "What mode should you use to add content to the end of a file?",
+            "options": [
+                "'r'",
+                "'w'",
+                "'a'",
+                "'e'"
+            ],
+            "correctAnswer": 2,
+            "explanation": "'a' (append) mode adds content to the end of the file without overwriting existing content."
+        },
+        {
+            "id": 87,
+            "question": "What happens if you try to open a non-existent file in 'r' mode?",
+            "options": [
+                "Creates the file",
+                "Returns None",
+                "Raises FileNotFoundError",
+                "Returns empty string"
+            ],
+            "correctAnswer": 2,
+            "explanation": "Opening a non-existent file in 'r' mode raises a FileNotFoundError."
+        },
+        {
+            "id": 88,
+            "question": "How do you write to a file?",
+            "options": [
+                "file.write(content)",
+                "file.append(content)",
+                "file.add(content)",
+                "file.insert(content)"
+            ],
+            "correctAnswer": 0,
+            "explanation": "Use file.write(content) to write a string to a file opened in 'w' or 'a' mode."
+        },
+        {
+            "id": 89,
+            "question": "What module is commonly used for CSV files?",
+            "options": [
+                "csv",
+                "file",
+                "data",
+                "excel"
+            ],
+            "correctAnswer": 0,
+            "explanation": "The 'csv' module provides functionality for reading and writing CSV (Comma-Separated Values) files."
+        },
+        {
+            "id": 90,
+            "question": "What does the 'newline' parameter do in open()?",
+            "options": [
+                "Adds newlines",
+                "Controls how newlines are handled",
+                "Removes newlines",
+                "Counts newlines"
+            ],
+            "correctAnswer": 1,
+            "explanation": "The 'newline' parameter controls how newline characters are interpreted. It's especially important for CSV files."
+        }
+    ]
+}

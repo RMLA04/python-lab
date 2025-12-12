@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "topic": "variables",
+        "front": "What is a variable in Python?",
+        "back": "A variable is a container for storing data values. In Python, variables are created when you assign a value to them using the = operator."
+    },
+    {
+        "id": 2,
+        "topic": "variables",
+        "front": "What naming convention should Python variables follow?",
+        "back": "Python variables should follow snake_case convention (lowercase with underscores), be descriptive, and cannot start with a number or contain spaces."
+    },
+    {
+        "id": 3,
+        "topic": "data-types",
+        "front": "What are the four basic data types in Python?",
+        "back": "int (integers), float (decimal numbers), str (strings/text), and bool (True/False values)."
+    },
+    {
+        "id": 4,
+        "topic": "data-types",
+        "front": "How do you check the type of a variable?",
+        "back": "Use the type() function. For example: type(42) returns <class 'int'>"
+    },
+    {
+        "id": 5,
+        "topic": "data-types",
+        "front": "What is type conversion?",
+        "back": "Type conversion (or type casting) is converting a value from one data type to another using functions like int(), float(), str(), or bool()."
+    },
+    {
+        "id": 6,
+        "topic": "operators",
+        "front": "What does the // operator do?",
+        "back": "The // operator performs floor division, returning the quotient without the remainder. For example: 10 // 3 = 3"
+    },
+    {
+        "id": 7,
+        "topic": "operators",
+        "front": "What is the modulus operator and what does it do?",
+        "back": "The modulus operator (%) returns the remainder of a division. For example: 10 % 3 = 1"
+    },
+    {
+        "id": 8,
+        "topic": "operators",
+        "front": "What are the three logical operators in Python?",
+        "back": "and (both conditions must be True), or (at least one condition must be True), and not (inverts the boolean value)."
+    },
+    {
+        "id": 9,
+        "topic": "conditionals",
+        "front": "What is the purpose of elif in Python?",
+        "back": "elif (else if) allows you to check multiple conditions sequentially. It's used after an if statement and before an optional else statement."
+    },
+    {
+        "id": 10,
+        "topic": "conditionals",
+        "front": "Why is indentation important in Python conditionals?",
+        "back": "Indentation defines code blocks in Python. All code that should execute when a condition is true must be indented at the same level under the if/elif/else statement."
+    },
+    {
+        "id": 11,
+        "topic": "loops",
+        "front": "What is the difference between for and while loops?",
+        "back": "for loops iterate over a sequence (like a list or range) a specific number of times. while loops repeat as long as a condition is True."
+    },
+    {
+        "id": 12,
+        "topic": "loops",
+        "front": "What does the range() function do?",
+        "back": "range() generates a sequence of numbers. range(5) gives 0-4, range(1,6) gives 1-5, and range(0,10,2) gives even numbers 0-8."
+    },
+    {
+        "id": 13,
+        "topic": "loops",
+        "front": "What is the difference between break and continue?",
+        "back": "break exits the loop entirely, while continue skips the rest of the current iteration and moves to the next one."
+    },
+    {
+        "id": 14,
+        "topic": "functions",
+        "front": "What keyword is used to define a function in Python?",
+        "back": "The def keyword is used to define a function, followed by the function name and parentheses."
+    },
+    {
+        "id": 15,
+        "topic": "functions",
+        "front": "What does the return statement do?",
+        "back": "The return statement sends a value back to the code that called the function. Without return, a function returns None by default."
+    },
+    {
+        "id": 16,
+        "topic": "functions",
+        "front": "What are default parameters?",
+        "back": "Default parameters have preset values that are used if no argument is provided when calling the function. Example: def greet(name='Guest')"
+    },
+    {
+        "id": 17,
+        "topic": "data-structures",
+        "front": "What is the difference between a list and a tuple?",
+        "back": "Lists are mutable (can be changed) and use square brackets []. Tuples are immutable (cannot be changed) and use parentheses ()."
+    },
+    {
+        "id": 18,
+        "topic": "data-structures",
+        "front": "How do you access the last element of a list?",
+        "back": "Use negative indexing: my_list[-1] accesses the last element, my_list[-2] accesses the second-to-last, etc."
+    },
+    {
+        "id": 19,
+        "topic": "data-structures",
+        "front": "What is a dictionary in Python?",
+        "back": "A dictionary is an unordered collection of key-value pairs, defined with curly braces {}. Keys must be unique and immutable."
+    },
+    {
+        "id": 20,
+        "topic": "data-structures",
+        "front": "How do you add an item to a list?",
+        "back": "Use append() to add to the end, insert(index, item) to add at a specific position, or extend() to add multiple items."
+    },
+    {
+        "id": 21,
+        "topic": "modules",
+        "front": "What is a module in Python?",
+        "back": "A module is a Python file containing functions, classes, and variables that can be imported and used in other Python programs."
+    },
+    {
+        "id": 22,
+        "topic": "modules",
+        "front": "What does 'import antigravity' do?",
+        "back": "It's a Python Easter egg that opens a web browser to the XKCD comic about Python, illustrating how Python makes programming feel effortless!"
+    },
+    {
+        "id": 23,
+        "topic": "modules",
+        "front": "What is the difference between 'import math' and 'from math import sqrt'?",
+        "back": "'import math' imports the entire module (use math.sqrt()). 'from math import sqrt' imports only sqrt (use sqrt() directly)."
+    },
+    {
+        "id": 24,
+        "topic": "file-operations",
+        "front": "What are the three main file modes in Python?",
+        "back": "'r' for reading (default), 'w' for writing (overwrites), and 'a' for appending (adds to end)."
+    },
+    {
+        "id": 25,
+        "topic": "file-operations",
+        "front": "Why should you use 'with' when opening files?",
+        "back": "The 'with' statement automatically closes the file when done, even if an error occurs. It's safer and cleaner than manually closing files."
+    },
+    {
+        "id": 26,
+        "topic": "file-operations",
+        "front": "What is the difference between read() and readlines()?",
+        "back": "read() returns the entire file as a single string. readlines() returns a list where each element is a line from the file."
+    },
+    {
+        "id": 27,
+        "topic": "operators",
+        "front": "What does the ** operator do?",
+        "back": "The ** operator performs exponentiation (power). For example: 2 ** 3 = 8 (2 to the power of 3)."
+    },
+    {
+        "id": 28,
+        "topic": "data-types",
+        "front": "What is an f-string?",
+        "back": "An f-string (formatted string literal) allows you to embed expressions inside strings using {}. Example: f'Hello {name}' where name is a variable."
+    },
+    {
+        "id": 29,
+        "topic": "loops",
+        "front": "What does enumerate() do?",
+        "back": "enumerate() adds a counter to an iterable and returns it as an enumerate object with (index, value) pairs. Useful for getting both index and value in loops."
+    },
+    {
+        "id": 30,
+        "topic": "functions",
+        "front": "What is a docstring?",
+        "back": "A docstring is a string literal that appears as the first statement in a function, class, or module. It documents what the code does and is enclosed in triple quotes \"\"\"."
+    }
+]

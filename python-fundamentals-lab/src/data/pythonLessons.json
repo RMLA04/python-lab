@@ -1,0 +1,253 @@
+[
+    {
+        "id": 1,
+        "title": "Variables & Assignment",
+        "slug": "variables",
+        "description": "Learn how to store and manipulate data using variables in Python.",
+        "content": "Variables are containers for storing data values. In Python, you don't need to declare a variable's type explicitly - Python figures it out automatically!",
+        "keyPoints": [
+            "Variables are created when you assign a value to them",
+            "Variable names should be descriptive and follow snake_case convention",
+            "Python is dynamically typed - variables can change type",
+            "Use meaningful names to make your code readable"
+        ],
+        "codeExamples": [
+            {
+                "title": "Basic Variable Assignment",
+                "code": "# Creating variables\nname = \"Alice\"\nage = 25\nheight = 5.6\nis_student = True\n\nprint(f\"{name} is {age} years old\")"
+            },
+            {
+                "title": "Reassigning Variables",
+                "code": "# Variables can change values\nscore = 100\nprint(score)  # 100\n\nscore = 150\nprint(score)  # 150\n\n# Variables can even change type!\nscore = \"Perfect\"\nprint(score)  # Perfect"
+            },
+            {
+                "title": "Multiple Assignment",
+                "code": "# Assign multiple variables at once\nx, y, z = 10, 20, 30\n\n# Swap values easily\na, b = 5, 10\na, b = b, a  # Now a=10, b=5"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Data Types",
+        "slug": "data-types",
+        "description": "Explore Python's built-in data types: integers, floats, strings, and booleans.",
+        "content": "Python has several built-in data types. The most common are: int (integers), float (decimal numbers), str (text), and bool (True/False).",
+        "keyPoints": [
+            "int: Whole numbers (e.g., 42, -7, 0)",
+            "float: Decimal numbers (e.g., 3.14, -0.5)",
+            "str: Text enclosed in quotes (e.g., 'hello', \"world\")",
+            "bool: True or False values",
+            "Use type() to check a variable's type"
+        ],
+        "codeExamples": [
+            {
+                "title": "Different Data Types",
+                "code": "# Integer\nage = 25\nprint(type(age))  # <class 'int'>\n\n# Float\npi = 3.14159\nprint(type(pi))  # <class 'float'>\n\n# String\ngreeting = \"Hello, Python!\"\nprint(type(greeting))  # <class 'str'>\n\n# Boolean\nis_learning = True\nprint(type(is_learning))  # <class 'bool'>"
+            },
+            {
+                "title": "Type Conversion",
+                "code": "# Converting between types\nnum_str = \"42\"\nnum_int = int(num_str)  # String to integer\nnum_float = float(num_str)  # String to float\n\nage = 25\nage_str = str(age)  # Integer to string\n\nprint(f\"String: {num_str}, Int: {num_int}, Float: {num_float}\")"
+            },
+            {
+                "title": "String Operations",
+                "code": "# String concatenation and formatting\nfirst_name = \"John\"\nlast_name = \"Doe\"\n\n# Concatenation\nfull_name = first_name + \" \" + last_name\n\n# F-strings (modern way)\ngreeting = f\"Hello, {full_name}!\"\n\n# String methods\nprint(full_name.upper())  # JOHN DOE\nprint(full_name.lower())  # john doe"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Operators",
+        "slug": "operators",
+        "description": "Master arithmetic, comparison, and logical operators in Python.",
+        "content": "Operators are symbols that perform operations on variables and values. Python supports arithmetic (+, -, *, /), comparison (==, !=, <, >), and logical (and, or, not) operators.",
+        "keyPoints": [
+            "Arithmetic: +, -, *, /, //, %, **",
+            "Comparison: ==, !=, <, >, <=, >=",
+            "Logical: and, or, not",
+            "Assignment: =, +=, -=, *=, /=",
+            "Operator precedence matters (PEMDAS)"
+        ],
+        "codeExamples": [
+            {
+                "title": "Arithmetic Operators",
+                "code": "# Basic arithmetic\na = 10\nb = 3\n\nprint(a + b)   # Addition: 13\nprint(a - b)   # Subtraction: 7\nprint(a * b)   # Multiplication: 30\nprint(a / b)   # Division: 3.333...\nprint(a // b)  # Floor division: 3\nprint(a % b)   # Modulus (remainder): 1\nprint(a ** b)  # Exponentiation: 1000"
+            },
+            {
+                "title": "Comparison Operators",
+                "code": "# Comparing values\nx = 5\ny = 10\n\nprint(x == y)  # Equal to: False\nprint(x != y)  # Not equal to: True\nprint(x < y)   # Less than: True\nprint(x > y)   # Greater than: False\nprint(x <= 5)  # Less than or equal: True\nprint(y >= 10) # Greater than or equal: True"
+            },
+            {
+                "title": "Logical Operators",
+                "code": "# Combining conditions\nage = 25\nhas_license = True\n\n# AND: both must be True\ncan_drive = age >= 18 and has_license\nprint(can_drive)  # True\n\n# OR: at least one must be True\nis_weekend = False\nis_holiday = True\ncan_relax = is_weekend or is_holiday\nprint(can_relax)  # True\n\n# NOT: inverts the boolean\nis_working = not can_relax\nprint(is_working)  # False"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Conditionals",
+        "slug": "conditionals",
+        "description": "Learn to make decisions in your code with if, elif, and else statements.",
+        "content": "Conditional statements allow your program to make decisions and execute different code based on conditions. Python uses if, elif, and else keywords.",
+        "keyPoints": [
+            "if: executes code if condition is True",
+            "elif: checks another condition if previous was False",
+            "else: executes if all previous conditions were False",
+            "Indentation is crucial in Python!",
+            "You can nest conditionals inside each other"
+        ],
+        "codeExamples": [
+            {
+                "title": "Basic If Statement",
+                "code": "# Simple if statement\nage = 18\n\nif age >= 18:\n    print(\"You are an adult\")\n    print(\"You can vote!\")\n\nprint(\"This always runs\")"
+            },
+            {
+                "title": "If-Elif-Else Chain",
+                "code": "# Multiple conditions\nscore = 85\n\nif score >= 90:\n    grade = \"A\"\nelif score >= 80:\n    grade = \"B\"\nelif score >= 70:\n    grade = \"C\"\nelif score >= 60:\n    grade = \"D\"\nelse:\n    grade = \"F\"\n\nprint(f\"Your grade is: {grade}\")"
+            },
+            {
+                "title": "Nested Conditionals",
+                "code": "# Conditions inside conditions\nage = 25\nhas_ticket = True\n\nif age >= 18:\n    if has_ticket:\n        print(\"Welcome to the concert!\")\n    else:\n        print(\"Please buy a ticket first\")\nelse:\n    print(\"Sorry, you must be 18 or older\")"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Loops",
+        "slug": "loops",
+        "description": "Automate repetitive tasks using for and while loops.",
+        "content": "Loops allow you to repeat code multiple times. Python has two main types: for loops (iterate over sequences) and while loops (repeat while condition is true).",
+        "keyPoints": [
+            "for loop: iterate over sequences (lists, ranges, strings)",
+            "while loop: repeat while condition is True",
+            "break: exit the loop early",
+            "continue: skip to next iteration",
+            "range(): generate number sequences"
+        ],
+        "codeExamples": [
+            {
+                "title": "For Loop with Range",
+                "code": "# Loop through numbers\nfor i in range(5):\n    print(f\"Count: {i}\")\n# Output: 0, 1, 2, 3, 4\n\n# Range with start and end\nfor num in range(1, 6):\n    print(num)\n# Output: 1, 2, 3, 4, 5\n\n# Range with step\nfor even in range(0, 11, 2):\n    print(even)\n# Output: 0, 2, 4, 6, 8, 10"
+            },
+            {
+                "title": "For Loop with Lists",
+                "code": "# Iterate over a list\nfruits = [\"apple\", \"banana\", \"cherry\"]\n\nfor fruit in fruits:\n    print(f\"I like {fruit}\")\n\n# With index using enumerate\nfor index, fruit in enumerate(fruits):\n    print(f\"{index + 1}. {fruit}\")"
+            },
+            {
+                "title": "While Loop",
+                "code": "# Repeat while condition is true\ncount = 0\n\nwhile count < 5:\n    print(f\"Count is {count}\")\n    count += 1\n\n# Break and continue\nnum = 0\nwhile num < 10:\n    num += 1\n    if num == 5:\n        continue  # Skip 5\n    if num == 8:\n        break  # Stop at 8\n    print(num)"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "title": "Functions",
+        "slug": "functions",
+        "description": "Create reusable code blocks with functions, parameters, and return values.",
+        "content": "Functions are reusable blocks of code that perform specific tasks. They help organize code, avoid repetition, and make programs more modular.",
+        "keyPoints": [
+            "def keyword defines a function",
+            "Parameters allow input to functions",
+            "return sends values back to caller",
+            "Functions can have default parameter values",
+            "Docstrings document what functions do"
+        ],
+        "codeExamples": [
+            {
+                "title": "Basic Function",
+                "code": "# Simple function\ndef greet():\n    print(\"Hello, World!\")\n\n# Call the function\ngreet()  # Output: Hello, World!\n\n# Function with parameter\ndef greet_person(name):\n    print(f\"Hello, {name}!\")\n\ngreet_person(\"Alice\")  # Hello, Alice!"
+            },
+            {
+                "title": "Functions with Return Values",
+                "code": "# Function that returns a value\ndef add(a, b):\n    return a + b\n\nresult = add(5, 3)\nprint(result)  # 8\n\n# Function with multiple returns\ndef calculate(a, b):\n    sum_val = a + b\n    diff = a - b\n    product = a * b\n    return sum_val, diff, product\n\ns, d, p = calculate(10, 5)\nprint(f\"Sum: {s}, Diff: {d}, Product: {p}\")"
+            },
+            {
+                "title": "Default Parameters",
+                "code": "# Function with default values\ndef greet(name, greeting=\"Hello\"):\n    return f\"{greeting}, {name}!\"\n\nprint(greet(\"Alice\"))  # Hello, Alice!\nprint(greet(\"Bob\", \"Hi\"))  # Hi, Bob!\n\n# Function with docstring\ndef multiply(a, b):\n    \"\"\"\n    Multiply two numbers and return the result.\n    \"\"\"\n    return a * b"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "title": "Lists, Tuples & Dictionaries",
+        "slug": "data-structures",
+        "description": "Work with Python's essential data structures for organizing collections of data.",
+        "content": "Python provides powerful built-in data structures: lists (mutable sequences), tuples (immutable sequences), and dictionaries (key-value pairs).",
+        "keyPoints": [
+            "Lists: ordered, mutable, allow duplicates [1, 2, 3]",
+            "Tuples: ordered, immutable, allow duplicates (1, 2, 3)",
+            "Dictionaries: unordered key-value pairs {'key': 'value'}",
+            "Lists and dicts are mutable, tuples are immutable",
+            "Access elements by index (lists/tuples) or key (dicts)"
+        ],
+        "codeExamples": [
+            {
+                "title": "Lists",
+                "code": "# Creating and modifying lists\nfruits = [\"apple\", \"banana\", \"cherry\"]\n\n# Accessing elements\nprint(fruits[0])  # apple\nprint(fruits[-1])  # cherry (last item)\n\n# Modifying lists\nfruits.append(\"orange\")  # Add to end\nfruits.insert(1, \"mango\")  # Insert at index\nfruits.remove(\"banana\")  # Remove by value\npopped = fruits.pop()  # Remove and return last\n\n# List slicing\nprint(fruits[1:3])  # Get items 1 to 2"
+            },
+            {
+                "title": "Tuples",
+                "code": "# Tuples are immutable\ncoordinates = (10, 20)\nrgb_color = (255, 128, 0)\n\n# Accessing tuple elements\nx, y = coordinates  # Unpacking\nprint(f\"X: {x}, Y: {y}\")\n\n# Tuples are useful for fixed data\nperson = (\"Alice\", 25, \"Engineer\")\nname, age, job = person\n\n# Can't modify tuples (this would error):\n# coordinates[0] = 15  # TypeError!"
+            },
+            {
+                "title": "Dictionaries",
+                "code": "# Key-value pairs\nstudent = {\n    \"name\": \"Alice\",\n    \"age\": 20,\n    \"grade\": \"A\",\n    \"courses\": [\"Math\", \"Physics\"]\n}\n\n# Accessing values\nprint(student[\"name\"])  # Alice\nprint(student.get(\"age\"))  # 20\n\n# Modifying dictionaries\nstudent[\"age\"] = 21  # Update\nstudent[\"email\"] = \"alice@example.com\"  # Add\ndel student[\"grade\"]  # Delete\n\n# Looping through dict\nfor key, value in student.items():\n    print(f\"{key}: {value}\")"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "title": "Modules & Imports",
+        "slug": "modules",
+        "description": "Extend Python's functionality by importing and using modules.",
+        "content": "Modules are Python files containing functions, classes, and variables. You can import modules to use their functionality in your code. Python has a rich standard library plus countless third-party modules.",
+        "keyPoints": [
+            "import keyword brings in modules",
+            "Standard library has many useful modules",
+            "from...import imports specific items",
+            "as keyword creates aliases",
+            "Third-party modules installed with pip"
+        ],
+        "codeExamples": [
+            {
+                "title": "Importing Standard Modules",
+                "code": "# Import entire module\nimport math\n\nprint(math.pi)  # 3.14159...\nprint(math.sqrt(16))  # 4.0\n\n# Import specific functions\nfrom random import randint, choice\n\nprint(randint(1, 10))  # Random number 1-10\nprint(choice([\"red\", \"blue\", \"green\"]))\n\n# Import with alias\nimport datetime as dt\n\nnow = dt.datetime.now()\nprint(now)"
+            },
+            {
+                "title": "Useful Standard Library Modules",
+                "code": "# os - operating system interface\nimport os\nprint(os.getcwd())  # Current directory\n\n# json - work with JSON data\nimport json\ndata = {\"name\": \"Alice\", \"age\": 25}\njson_str = json.dumps(data)\nprint(json_str)\n\n# collections - specialized containers\nfrom collections import Counter\nwords = [\"apple\", \"banana\", \"apple\"]\ncount = Counter(words)\nprint(count)  # Counter({'apple': 2, 'banana': 1})"
+            },
+            {
+                "title": "The Antigravity Easter Egg",
+                "code": "# Python has a fun Easter egg!\n# This opens a web comic about Python\nimport antigravity\n\n# Note: This actually opens your browser\n# to https://xkcd.com/353/\n# It's a joke about how Python makes\n# programming feel effortless!\n\n# Try it in your Python interpreter!"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "title": "File Operations",
+        "slug": "file-operations",
+        "description": "Learn to read from and write to files in Python.",
+        "content": "Python makes it easy to work with files. You can read data from files, write data to files, and manipulate file contents programmatically.",
+        "keyPoints": [
+            "open() function opens files",
+            "Modes: 'r' (read), 'w' (write), 'a' (append)",
+            "Always close files or use 'with' statement",
+            "read(), readline(), readlines() for reading",
+            "write() and writelines() for writing"
+        ],
+        "codeExamples": [
+            {
+                "title": "Reading Files",
+                "code": "# Read entire file\nwith open('data.txt', 'r') as file:\n    content = file.read()\n    print(content)\n\n# Read line by line\nwith open('data.txt', 'r') as file:\n    for line in file:\n        print(line.strip())\n\n# Read all lines into a list\nwith open('data.txt', 'r') as file:\n    lines = file.readlines()\n    print(lines)"
+            },
+            {
+                "title": "Writing Files",
+                "code": "# Write to file (overwrites existing)\nwith open('output.txt', 'w') as file:\n    file.write(\"Hello, World!\\n\")\n    file.write(\"Python is awesome!\")\n\n# Append to file\nwith open('output.txt', 'a') as file:\n    file.write(\"\\nAppending new line\")\n\n# Write multiple lines\nlines = [\"Line 1\\n\", \"Line 2\\n\", \"Line 3\\n\"]\nwith open('output.txt', 'w') as file:\n    file.writelines(lines)"
+            },
+            {
+                "title": "Working with CSV Files",
+                "code": "import csv\n\n# Write CSV\ndata = [\n    ['Name', 'Age', 'City'],\n    ['Alice', '25', 'New York'],\n    ['Bob', '30', 'San Francisco']\n]\n\nwith open('people.csv', 'w', newline='') as file:\n    writer = csv.writer(file)\n    writer.writerows(data)\n\n# Read CSV\nwith open('people.csv', 'r') as file:\n    reader = csv.reader(file)\n    for row in reader:\n        print(row)"
+            }
+        ]
+    }
+]

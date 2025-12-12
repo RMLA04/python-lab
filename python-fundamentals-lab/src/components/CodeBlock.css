@@ -1,0 +1,109 @@
+.code-block {
+    background: var(--code-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    border: 1px solid var(--glass-border);
+}
+
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: var(--glass-bg);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.code-language {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--accent-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.copy-button {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.copy-button:hover {
+    background: var(--glass-hover);
+    color: var(--text-primary);
+}
+
+.copy-button svg {
+    width: 18px;
+    height: 18px;
+    stroke-width: 2;
+}
+
+.copy-feedback {
+    color: var(--success);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.code-content {
+    padding: 1.5rem;
+    overflow-x: auto;
+    font-family: 'Fira Code', 'Consolas', 'Monaco', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--code-text);
+}
+
+.code-content code {
+    display: block;
+}
+
+/* Syntax highlighting */
+.keyword {
+    color: var(--syntax-keyword);
+    font-weight: 600;
+}
+
+.builtin {
+    color: var(--syntax-builtin);
+}
+
+.string {
+    color: var(--syntax-string);
+}
+
+.comment {
+    color: var(--syntax-comment);
+    font-style: italic;
+}
+
+.number {
+    color: var(--syntax-number);
+}
+
+/* Scrollbar styling */
+.code-content::-webkit-scrollbar {
+    height: 8px;
+}
+
+.code-content::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    border-radius: 4px;
+}
+
+.code-content::-webkit-scrollbar-thumb {
+    background: var(--glass-border);
+    border-radius: 4px;
+}
+
+.code-content::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}
